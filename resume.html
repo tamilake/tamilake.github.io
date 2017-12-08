@@ -2,23 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="style2.css" rel="stylesheet" />
     <link rel="icon"
     type="image/png"
     href="icon-01.png">
-    <title>Tamsen A. Lake Resume</title>
+    <title>Tamsen Lake - Resume</title>
   </head>
 
-  <body>
+  <body class="resume">
 
-  <div id="wrapper">
+    <div class="wrapper">
+
     <header>
       <h1>Tamsen A. Lake</h1>
       <address>
         3 Indian Hill Rd Towaco, NJ 07082 <br>
         973-997-7051 &sol; <a id="mail" href="mailto:tal35@miami.edu">TAL35@miami.edu</a>
       </address>
-      <nav>
+      <nav class="onpage">
         <ul>
           <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -28,8 +29,19 @@
       </nav>
     </header>
 
+    <nav>
+      <div id="mySideNav" class="sidenav">
+        <a href="index.html" id="home">Home</a>
+        <a href="resume.html" id="resume">Resume</a>
+        <a href="contact.html" id="contact">Contact</a>
+        <a href="portfolio.html" id="portfolio">Portfolio</a>
+    </div>
+    </nav>
+
     <main>
-      <img id="circle" src="icon-01.png" alt="logo" />
+      <div id="circle">
+        <img src="icon-01.png" alt="logo" />
+      </div>
       <section id="education">
         <h2>Education</h2>
         <article>
@@ -143,7 +155,7 @@
         </article>
       </section>
     </main>
-  </div>
 
+  </div>
   </body>
 </html>
