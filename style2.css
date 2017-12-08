@@ -99,8 +99,6 @@ img.home {
   float: left;
 }
 
-
-
 .buttons a:link, .buttons a:visited, .buttons a:active {
   background-color: rgb(118,68,138);
   padding: 15px;
@@ -432,8 +430,6 @@ body.portfolio main {
   grid-template-rows: repeat(5, 100%);
   grid-gap: 10px;
   align-items: center;
-
-
 
 
   grid-template-areas:
