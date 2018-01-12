@@ -49,28 +49,20 @@ h1{
 }
 
 #home {
-  top: 80px;
+  top: 115px;
   background-color: rgba(118,68,138,.8);
 }
 
-body.resume #home {
-  top: 140px;
-}
 
 #resume {
-  top: 140px;
+  top: 175px;
   background-color: rgba(118,68,138,.6);
 }
-body.resume #resume {
-  top: 200px;
-}
+
 
 #portfolio {
-  top: 200px;
+  top: 235px;
   background-color: rgba(118,68,138,.4);
-}
-body.resume #portfolio {
-  top: 260px;
 }
 /*END SIDE NAV*/
 
