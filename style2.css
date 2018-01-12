@@ -50,7 +50,7 @@ h1{
 
 #home {
   top: 80px;
-  background-color: rgba(118,68,138,1);
+  background-color: rgba(118,68,138,.8);
 }
 
 body.resume #home {
@@ -59,25 +59,17 @@ body.resume #home {
 
 #resume {
   top: 140px;
-  background-color: rgba(118,68,138,.8);
+  background-color: rgba(118,68,138,.6);
 }
 body.resume #resume {
   top: 200px;
 }
 
 #portfolio {
-  top: 260px;
+  top: 200px;
   background-color: rgba(118,68,138,.4);
 }
 body.resume #portfolio {
-  top: 320px;
-}
-
-#contact {
-  top: 200px;
-  background-color: rgba(118,68,138,.6);
-}
-body.resume #contact {
   top: 260px;
 }
 /*END SIDE NAV*/
@@ -98,73 +90,6 @@ img.home {
   border: 4px groove #fff;
   float: left;
 }
-
-.buttons a:link, .buttons a:visited, .buttons a:active {
-  background-color: rgb(118,68,138);
-  padding: 15px;
-  font-size: 20px;
-  position: relative;
-  color: #fff;
-  border-radius: 5px;
-
-  transform-origin: 0 100%;
-}
-
-.buttons a:hover {
-  text-decoration: none;
-  color: #fff;
-
-  animation-name: wobble;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-
-
-@keyframes wobble {
-  16.65% {
-    transform: skew(-12deg);
-  }
-  33.3% {
-    transform: skew(10deg);
-  }
-  49.95% {
-    transform: skew(-6deg);
-  }
-  66.6% {
-    transform: skew(4deg);
-  }
-  83.25% {
-    transform: skew(-2deg);
-  }
-  100% {
-    transform: skew(0);
-  }
-}
-
-#res {
-  grid-area: res;
-}
-#cont {
-  grid-area: cont;
-}
-#port {
-  grid-area: port;
-}
-
-.buttons {
-  text-align: center;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: 5px;
-  padding: 0px 10px 10px;
-
-  grid-template-areas:
-  "res cont port";
-}
-
 
 /*RESUME*/
 body.resume header, body.resume main {
@@ -187,33 +112,6 @@ body.resume header {
 
 #mail:hover {
   text-decoration: underline;
-}
-
-nav.onpage {
-  background-color: #fff;
-  color: rgb(118,68,138);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-nav.onpage ul {
-  list-style-type: none;
-}
-
-nav.onpage li {
-  display: inline-block;
-  padding-right: 50px;
-}
-
-nav.onpage a, a:visited, a:active {
-  text-decoration: none;
-  color: rgb(118,68,138);
-}
-
-nav.onpage a:hover {
-  background-color: rgba(118,68,138,0.5);
 }
 
 #education {
@@ -297,26 +195,6 @@ h1{
   margin-top: 5px;
 }
 
-/*CONTACT PAGE*/
-body.contact h2, body.contact ul {
-  text-align: center;
-}
-
-.reach li {
-  diplay: inline;
-  list-style: none;
-}
-
-#phone:before {
-  content: "\2706";
-  padding: 0 10px;
-}
-
-#email:before {
-  content: "\2709";
-  padding: 0 10px;
-}
-
 
 /*PORTFOLIO*/
 .gallery {
@@ -335,7 +213,7 @@ body.contact h2, body.contact ul {
 .overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 2px;
   right: 0;
   background-color: rgba(118,68,138,.8);
   overflow: hidden;
@@ -350,7 +228,7 @@ body.contact h2, body.contact ul {
 
 .text {
   white-space: nowrap;
-  color: #000;
+  color: #fff;
   font-size: 12px;
   position: absolute;
   text-align: center;
