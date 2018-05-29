@@ -73,7 +73,11 @@ body.index main {
 }
 
 .about {
-  height: 250px;
+  max-height: 300px;
+}
+
+.about p {
+  margin-left: 10px;
 }
 
 img.home {
@@ -120,7 +124,7 @@ body.resume header {
 }
 #education, #experience {
   border-left: 2px solid #000;
-  padding-left: 10px;
+  padding-left: 25px;
   margin-left: 10px;
 }
 #circle {
@@ -132,18 +136,14 @@ body.resume header {
 body.resume main {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: 1fr repeat(3, 2fr);
   grid-gap: 1px;
 
   grid-template-areas:
   "circle education"
   "honors education"
-  "honors education"
-  "skills education"
   "skills experience"
-  "skills experience"
-  ". experience"
-  ". experience";
+  "skills experience";
 
 }
 
@@ -164,16 +164,6 @@ body.resume main h3 {
   color: rgb(118,68,138);
   font-family: "Satisfy", "Century Gothic", "Arial", sans-serif;
   font-size: 25px;
-}
-
-main a:link, a:visited, a:active {
-  text-decoration: none;
-  color: rgb(118,68,138);
-}
-
-main a:hover {
-  text-decoration: underline;
-  color: rgb(118,68,138);
 }
 
 h1{
@@ -251,9 +241,7 @@ h1{
 #princess {
   grid-area: princess;
 }
-#back {
-  grid-area: back;
-}
+
 #blower {
   grid-area: blower;
 }
@@ -293,20 +281,41 @@ h1{
 #white {
   grid-area: white;
 }
+#glass {
+  grid-area: glass;
+}
+#pyro {
+  grid-area: pyro;
+}
+#weld {
+  grid-area: weld;
+}
+#sunset {
+  grid-area: sunset;
+}
+#video {
+  grid-area: video;
+  justify-self: center;
+}
+#zorf {
+  grid-area: zorf;
+  justify-self: center;
+}
 
 body.portfolio main {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(5, 100%);
+  grid-template-rows: repeat(7, 100%);
   grid-gap: 10px;
   align-items: center;
 
 
   grid-template-areas:
-  "nyc lwings gato princess"
+  "nyc lwings glass princess"
   "shoes horse dwings speak"
-  "face water poppa blower"
-  "jen dress silent thing"
-  "white back seuss random"
-  "white streetlight seuss random";
+  "weld water poppa blower"
+  "jen dress thing silent"
+  "white sunset pyro gato"
+  "face zorf zorf streetlight"
+  "random video video seuss";
 }
