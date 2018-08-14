@@ -496,7 +496,7 @@ margin-left: 10px;
   margin-left: 10px;
 }
 #palm2:hover {
-  content: url('images/graphics/Orientation.jpg');
+  content: url('images/graphics/OrientationCard.jpg');
 }
 #shirts {
   grid-area: shirts;
@@ -508,14 +508,14 @@ margin-left: 10px;
   margin-left: 10px;
 }
 #shirt1:hover {
-  content: url('images/graphics/power_shirt.jpg');
+  content: url('images/graphics/powershirt.jpg');
 }
 #shirt2 {
   grid-area: shirt2;
   margin-left: 10px;
 }
 #shirt2:hover {
-  content: url('images/graphics/Shirt.jpg');
+  content: url('images/graphics/starshirt.jpg');
 }
 #shirt3 {
   grid-area: shirt3;
