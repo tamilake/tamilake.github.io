@@ -421,14 +421,14 @@ margin-left: 10px;
   margin-left: 10px;
 }
 #mag1:hover {
-  content: url('images/graphics/mag1.jpg');
+  content: url('images/graphics/magnet1.jpg');
 }
 #mag2 {
   grid-area: mag2;
   margin-left: 10px;
 }
 #mag2:hover {
-  content: url('images/graphics/mag2.jpg');
+  content: url('images/graphics/magnet2.jpg');
 }
 #mag3 {
   grid-area: mag3;
@@ -467,7 +467,7 @@ margin-left: 10px;
   grid-area: ad3;
 }
 #ad3:hover {
-  content: url('images/graphics/Murder.jpg');
+  content: url('images/graphics/Murder1.jpg');
 }
 #event {
   grid-area: event;
