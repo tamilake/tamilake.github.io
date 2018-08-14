@@ -31,7 +31,7 @@ h1{
 
 
 /*START SIDE NAV */
-#mySideNav a {
+#mySideNav a{
   position: absolute;
   left: -100px;
   transition: 0.3s;
@@ -52,19 +52,18 @@ h1{
   top: 115px;
   background-color: rgba(118,68,138,.8);
 }
-
-
 #resume {
   top: 175px;
   background-color: rgba(118,68,138,.6);
 }
-
-
 #portfolio {
   top: 235px;
   background-color: rgba(118,68,138,.4);
 }
-/*END SIDE NAV*/
+#graphic {
+  top: 295px;
+  background-color: rgba(118,68,138,.2);
+}
 
 
 /*HOME PAGE*/
@@ -301,11 +300,20 @@ h1{
   grid-area: zorf;
   justify-self: center;
 }
+#demon {
+  grid-area: demon;
+}
+#dots {
+  grid-area: dots;
+}
+#chicken {
+  grid-area: chicken;
+}
 
 body.portfolio main {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(7, 100%);
+  grid-template-rows: repeat(8, 100%);
   grid-gap: 10px;
   align-items: center;
 
@@ -317,5 +325,247 @@ body.portfolio main {
   "jen dress thing silent"
   "white sunset pyro gato"
   "face zorf zorf streetlight"
-  "random video video seuss";
+  "dots chicken demon random"
+  "dots video video seuss";
+}
+
+/*GRAPHIC*/
+.pix {
+margin-left: 10px;
+}
+#blurb {
+  grid-area: blurb;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#hijinks_img {
+  grid-area: hijinks_img;
+}
+#hijinks {
+  grid-area: hijinks;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#publix_img1 {
+  grid-area: publix_img1;
+}
+#publix_img2 {
+  grid-area: publix_img2;
+}
+#publix {
+  grid-area: publix;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#hp{
+  grid-area: hp;
+  margin-left: 20px;
+  margin-right:20px;
+}
+#logo{
+  grid-area: logo;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#logo_c {
+  grid-area: logo_c;
+  margin-left: 10px;
+}
+#logo_bw {
+  grid-area: logo_bw;
+  margin-left: 10px;
+}
+#banner {
+  grid-area: banner;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#banner_img {
+  grid-area: banner_img;
+  margin-left: 10px;
+}
+#bc{
+  grid-area: bc;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#bcF1 {
+  grid-area: bcF1;
+  margin-left: 20px;
+}
+#bcF1:hover {
+  content: url('images/graphics/CAC_FALL2017_BC-01.jpg');
+}
+#bcF2 {
+  grid-area: bcF2;
+  margin-left: 20px;
+}
+#bcF2:hover {
+  content: url('images/graphics/CAC_SPR2018_BC-01.png');
+}
+#bcF3 {
+  grid-area: bcF3;
+  margin-left: 20px;
+}
+#bcF3:hover {
+  content: url('images/graphics/CAC_FALL2018_BC-01.png');
+}
+#mag{
+  grid-area: mag;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#mag1 {
+  grid-area: mag1;
+  margin-left: 10px;
+}
+#mag1:hover {
+  content: url('images/graphics/mag1.jpg');
+}
+#mag2 {
+  grid-area: mag2;
+  margin-left: 10px;
+}
+#mag2:hover {
+  content: url('images/graphics/mag2.jpg');
+}
+#mag3 {
+  grid-area: mag3;
+  margin-left: 10px;
+}
+#mag3:hover {
+  content: url('images/graphics/magnet.jpg');
+}
+#fb{
+  grid-area: fb;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#fb1 {
+  grid-area: fb1;
+  margin-left: 10px;
+}
+#fb2 {
+  grid-area: fb2;
+  margin-left: 10px;
+}
+#ad{
+  grid-area: ad;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#ad1 {
+  grid-area: ad1;
+  margin-left: 10px;
+}
+#ad2 {
+  grid-area: ad2;
+  margin-left: 10px;
+}
+#ad3 {
+  grid-area: ad3;
+}
+#ad3:hover {
+  content: url('images/graphics/Murder.jpg');
+}
+#event {
+  grid-area: event;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#event1 {
+  grid-area: event1;
+  margin-left: 10px;
+}
+#event2 {
+  grid-area: event2;
+  margin-left: 10px;
+}
+#palm{
+  grid-area: palm;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#palm1 {
+  grid-area: palm1;
+  margin-left: 20px;
+}
+#palm2 {
+  grid-area: palm2;
+  margin-left: 10px;
+}
+#palm2:hover {
+  content: url('images/graphics/Orientation.jpg');
+}
+#shirts {
+  grid-area: shirts;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#shirt1 {
+  grid-area: shirt1;
+  margin-left: 10px;
+}
+#shirt1:hover {
+  content: url('images/graphics/power_shirt.jpg');
+}
+#shirt2 {
+  grid-area: shirt2;
+  margin-left: 10px;
+}
+#shirt2:hover {
+  content: url('images/graphics/Shirt.jpg');
+}
+#shirt3 {
+  grid-area: shirt3;
+  margin-left: 10px;
+}
+#shirt3:hover {
+  content: url('images/graphics/cac_shirt.jpg');
+}
+
+body.graphic h3 {
+  font-family: "Satisfy", "Century Gothic", "Arial", sans-serif;
+  font-size: 25px;
+  color: rgb(118,68,138);
+}
+
+body.graphic main {
+  background-color: rgba(255, 255, 255, 0.5);
+
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(27,100%);
+  grid-gap: 15px 5px;
+  padding: 20px 0px;
+
+  grid-template-areas:
+  "blurb blurb blurb blurb blurb blurb"
+  "hijinks hijinks hijinks publix publix publix"
+  "hijinks_img hijinks_img hijinks_img publix_img1 publix_img1 publix_img1"
+  "hijinks_img hijinks_img hijinks_img publix_img2 publix_img2 publix_img2"
+  "hijinks_img hijinks_img hijinks_img . . ."
+  "hijinks_img hijinks_img hijinks_img . . ."
+  "hp hp hp hp hp hp"
+  "logo logo logo logo logo logo"
+  "logo_c logo_c logo_c logo_bw logo_bw logo_bw"
+  "banner banner banner banner banner ."
+  "banner_img banner_img banner_img banner_img banner_img banner_img"
+  "bc bc bc bc bc ."
+  "bcF1 bcF1 bcF2 bcF2 bcF3 bcF3"
+  "mag mag mag mag mag ."
+  "mag1 mag1 mag2 mag2 mag3 mag3"
+  "fb fb fb fb fb ."
+  "fb1 fb1 fb1 fb2 fb2 fb2"
+  "ad ad ad ad ad ."
+  "ad1 ad1 ad1 ad3 ad3 ad3"
+  "ad2 ad2 ad2 ad3 ad3 ad3"
+  "event event event event event ."
+  "event1 event1 event1 event2 event2 event2"
+  "palm palm palm palm palm ."
+  "palm1 palm1 palm2 palm2 palm2 ."
+  "shirts shirts shirts shirts shirts ."
+  "shirt3 shirt3 shirt2 shirt2 shirt1 shirt1";
+
 }
