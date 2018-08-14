@@ -342,7 +342,7 @@ margin-left: 10px;
 #hijinks_img {
   grid-area: hijinks_img;
 }
-#hijinks {
+body.graphic main #hijinks {
   grid-area: hijinks;
   margin-left: 20px;
   margin-right: 20px;
