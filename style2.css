@@ -525,13 +525,13 @@ margin-left: 10px;
   content: url('images/graphics/cac_shirt.jpg');
 }
 
-body.graphic h3 {
+body .graphic h3 {
   font-family: "Satisfy", "Century Gothic", "Arial", sans-serif;
   font-size: 25px;
   color: rgb(118,68,138);
 }
 
-body.graphic main {
+body .graphic main {
   background-color: rgba(255, 255, 255, 0.5);
 
   display: grid;
