@@ -524,6 +524,11 @@ margin-left: 10px;
 #shirt3:hover {
   content: url('images/graphics/cacshirt.jpg');
 }
+#firefox {
+  grid-area: firefox;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 body.graphic h3 {
   font-family: "Satisfy", "Century Gothic", "Arial", sans-serif;
@@ -536,7 +541,7 @@ body.graphic main {
 
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  grid-template-rows: repeat(27,100%);
+  grid-template-rows: repeat(28,100%);
   grid-gap: 15px 5px;
   padding: 20px 0px;
 
@@ -566,6 +571,7 @@ body.graphic main {
   "palm palm palm palm palm ."
   "palm1 palm1 palm2 palm2 palm2 ."
   "shirts shirts shirts shirts shirts ."
-  "shirt3 shirt3 shirt2 shirt2 shirt1 shirt1";
+  "shirt3 shirt3 shirt2 shirt2 shirt1 shirt1"
+  "firefox firefox firefox firefox firefox .";
 
 }
