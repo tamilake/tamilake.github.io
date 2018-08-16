@@ -145,8 +145,11 @@ body.resume main {
   "skills experience";
 
 }
-
-body.resume main ul {
+#edu {
+  list-style-type: none;
+  margin: 2px 0px 10px;
+}
+#classes{
   list-style-type: square;
   margin: 2px 0px 10px;
 }
@@ -330,6 +333,13 @@ body.portfolio main {
 }
 
 /*GRAPHIC*/
+.intlink{
+  text-decoration: none;
+  color: rgba(0,0,0,1);
+}
+.movie {
+  font-style: italic;
+}
 .pix {
 margin-left: 10px;
 }
