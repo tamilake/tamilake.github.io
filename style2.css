@@ -26,13 +26,13 @@ header {
 
 h1{
   margin: 0px 10px 5px;
-  font-family: "Satisfy", "Century Gothic", "Arial", sans-serif;
+  font-family: "Century Schoolbook", "Century Gothic", "Arial", sans-serif;
 }
 
 
 /*START SIDE NAV */
 #mySideNav a{
-  position: absolute;
+  position: fixed;
   left: -100px;
   transition: 0.3s;
   padding: 15px;
@@ -49,19 +49,19 @@ h1{
 }
 
 #home {
-  top: 115px;
+  top: 40px;
   background-color: rgba(118,68,138,.8);
 }
 #resume {
-  top: 175px;
+  top: 100px;
   background-color: rgba(118,68,138,.6);
 }
 #portfolio {
-  top: 235px;
+  top: 160px;
   background-color: rgba(118,68,138,.4);
 }
 #graphicd {
-  top: 295px;
+  top: 220px;
   background-color: rgba(118,68,138,.2);
 }
 
@@ -87,6 +87,15 @@ img.home {
 }
 
 /*RESUME*/
+#pdf {
+  color: rgb(118,68,138);
+  text-decoration: none;
+}
+
+#pdf: hover {
+  text-decoration: underline;
+}
+
 body.resume header, body.resume main {
   background-color: rgba(255,255,255,.4);
   padding: 5px 20px;
@@ -109,7 +118,7 @@ body.resume header {
   text-decoration: underline;
 }
 
-#education {
+ #education {
   grid-area: education;
 }
 #experience {
@@ -121,36 +130,29 @@ body.resume header {
 #skills {
   grid-area: skills;
 }
-#education, #experience {
+/* #education {
   border-left: 2px solid #000;
   padding-left: 25px;
   margin-left: 10px;
-}
-#circle {
-  grid-area: circle;
-  border-radius: 50%;
-  margin: auto auto;
-}
+} */
 
 body.resume main {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr repeat(3, 2fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   grid-gap: 1px;
 
   grid-template-areas:
-  "circle education"
-  "honors education"
-  "skills experience"
-  "skills experience";
-
+  "education skills"
+  "experience experience"
+  "honors honors";
 }
 #edu {
   list-style-type: none;
   margin: 2px 0px 10px;
 }
-#classes{
-  list-style-type: square;
+#classes, #honors{
+  list-style-type: disc;
   margin: 2px 0px 10px;
 }
 
@@ -162,15 +164,16 @@ body.resume main h2, h3 {
   margin: 10px 0px 2px;
 }
 
-body.resume main h3 {
+body.resume main h2 {
   color: rgb(118,68,138);
-  font-family: "Satisfy", "Century Gothic", "Arial", sans-serif;
+  font-family: "Century Schoolbook", "Century Gothic", "Arial", sans-serif;
   font-size: 25px;
 }
 
-h1{
+ body.resume h1{
   margin: 0px 0px 2px;
-  font-family: "Satisfy", "Century Gothic", "Arial", sans-serif;
+  font-family: "Century Schoolbook", "Century Gothic", "Arial", sans-serif;
+  font-size: 50px;
 }
 
 #circle img {
@@ -333,9 +336,12 @@ body.portfolio main {
 }
 
 /*GRAPHIC*/
-.intlink{
+.intlink {
   text-decoration: none;
   color: rgba(0,0,0,1);
+}
+.intlink:hover {
+  text-decoration: underline;
 }
 .movie {
   font-style: italic;
@@ -541,8 +547,8 @@ margin-left: 10px;
 }
 
 body.graphic h3 {
-  font-family: "Satisfy", "Century Gothic", "Arial", sans-serif;
-  font-size: 25px;
+  font-family: "Century Schoolbook", "Century Gothic", "Arial", sans-serif;
+  font-size: 20px;
   color: rgb(118,68,138);
 }
 
@@ -584,4 +590,21 @@ body.graphic main {
   "shirt3 shirt3 shirt2 shirt2 shirt1 shirt1"
   "firefox firefox firefox firefox firefox .";
 
+}
+
+.footer {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgb(118,68,138);
+  padding: 5px 10px;
+}
+
+#footer {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer:hover {
+  text-decoration: underline;
 }
