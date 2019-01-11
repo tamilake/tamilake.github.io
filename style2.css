@@ -272,203 +272,192 @@ body .portfolio main {
   font-style: italic;
 }
 .pix {
-margin-left: 10px;
+/* margin-left: 10px; */
+
 }
 #blurb {
-  grid-area: blurb;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-#hijinks_img {
-  grid-area: hijinks_img;
-}
 #hijinks {
-  grid-area: hijinks;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 100%;
+
 }
-#publix_img1 {
-  grid-area: publix_img1;
-}
-#publix_img2 {
-  grid-area: publix_img2;
-}
+
 #publix {
-  grid-area: publix;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 100%;
+
 }
 #hp{
-  grid-area: hp;
   margin-left: 20px;
-  margin-right:20px;
+  width: 90%;
+
 }
 #logo{
-  grid-area: logo;
   margin-left: 20px;
   margin-right: 20px;
+
 }
-#logo_c {
-  grid-area: logo_c;
-  margin-left: 10px;
-}
-#logo_bw {
-  grid-area: logo_bw;
-  margin-left: 10px;
-}
+
 #banner {
-  grid-area: banner;
   margin-left: 20px;
   margin-right: 20px;
+
 }
-#banner_img {
-  grid-area: banner_img;
-  margin-left: 10px;
-}
+
 #bc{
-  grid-area: bc;
   margin-left: 20px;
   margin-right: 20px;
+
 }
 #bcF1 {
-  grid-area: bcF1;
   margin-left: 20px;
+
 }
 #bcF1:hover {
   content: url('images/graphics/CAC_FALL2017_BC-01.jpg');
 }
 #bcF2 {
-  grid-area: bcF2;
   margin-left: 20px;
+
 }
 #bcF2:hover {
   content: url('images/graphics/CAC_SPR2018_BC-01.png');
 }
 #bcF3 {
-  grid-area: bcF3;
   margin-left: 20px;
+
 }
 #bcF3:hover {
   content: url('images/graphics/CAC_FALL2018_BC-01.png');
 }
 #mag{
-  grid-area: mag;
   margin-left: 20px;
   margin-right: 20px;
+
+  max-width: 100%;
 }
 #mag1 {
-  grid-area: mag1;
   margin-left: 10px;
+
 }
 #mag1:hover {
   content: url('images/graphics/magnet1.jpg');
 }
 #mag2 {
-  grid-area: mag2;
   margin-left: 10px;
+
 }
 #mag2:hover {
   content: url('images/graphics/magnet2.jpg');
 }
 #mag3 {
-  grid-area: mag3;
   margin-left: 10px;
+
 }
 #mag3:hover {
   content: url('images/graphics/magnet.jpg');
 }
 #fb{
-  grid-area: fb;
   margin-left: 20px;
   margin-right: 20px;
+
+  max-width: 100%;
 }
 #fb1 {
-  grid-area: fb1;
   margin-left: 10px;
+
 }
 #fb2 {
-  grid-area: fb2;
   margin-left: 10px;
+
 }
 #ad{
-  grid-area: ad;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 100%;
 }
 #ad1 {
-  grid-area: ad1;
   margin-left: 10px;
+  max-width: 40%;
 }
-#ad2 {
-  grid-area: ad2;
-  margin-left: 10px;
-}
+
 #ad3 {
-  grid-area: ad3;
+  max-width: 40%;
+  float: right;
+  margin-right: 10px;
 }
 #ad3:hover {
   content: url('images/graphics/Murder1.jpg');
 }
 #event {
-  grid-area: event;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 100%;
 }
 #event1 {
   grid-area: event1;
   margin-left: 10px;
+
 }
 #event2 {
-  grid-area: event2;
   margin-left: 10px;
+
 }
 #palm{
-  grid-area: palm;
   margin-left: 20px;
   margin-right: 20px;
+
+  max-width: 100%;
 }
 #palm1 {
-  grid-area: palm1;
   margin-left: 20px;
+
 }
 #palm2 {
-  grid-area: palm2;
   margin-left: 10px;
+
 }
 #palm2:hover {
   content: url('images/graphics/OrientationCard.jpg');
 }
 #shirts {
-  grid-area: shirts;
   margin-left: 20px;
   margin-right: 20px;
+
+  max-width: 100%;
 }
 #shirt1 {
-  grid-area: shirt1;
   margin-left: 10px;
+
 }
 #shirt1:hover {
   content: url('images/graphics/powershirt.jpg');
 }
 #shirt2 {
-  grid-area: shirt2;
   margin-left: 10px;
+
 }
 #shirt2:hover {
   content: url('images/graphics/starshirt.jpg');
 }
 #shirt3 {
-  grid-area: shirt3;
   margin-left: 10px;
+
 }
 #shirt3:hover {
   content: url('images/graphics/cacshirt.jpg');
 }
 #firefox {
-  grid-area: firefox;
   margin-left: 10px;
   margin-right: 10px;
+
+  max-width: 100%;
 }
 
 body.graphic h3 {
@@ -479,42 +468,6 @@ body.graphic h3 {
 
 body.graphic main {
   background-color: rgba(255, 255, 255, 0.5);
-
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  grid-template-rows: repeat(28,100%);
-  grid-gap: 15px 5px;
-  padding: 20px 0px;
-
-  grid-template-areas:
-  "blurb blurb blurb blurb blurb blurb"
-  "hijinks hijinks hijinks publix publix publix"
-  "hijinks_img hijinks_img hijinks_img publix_img1 publix_img1 publix_img1"
-  "hijinks_img hijinks_img hijinks_img publix_img2 publix_img2 publix_img2"
-  "hijinks_img hijinks_img hijinks_img . . ."
-  "hijinks_img hijinks_img hijinks_img . . ."
-  "hp hp hp hp hp hp"
-  "logo logo logo logo logo logo"
-  "logo_c logo_c logo_c logo_bw logo_bw logo_bw"
-  "banner banner banner banner banner ."
-  "banner_img banner_img banner_img banner_img banner_img banner_img"
-  "bc bc bc bc bc ."
-  "bcF1 bcF1 bcF2 bcF2 bcF3 bcF3"
-  "mag mag mag mag mag ."
-  "mag1 mag1 mag2 mag2 mag3 mag3"
-  "fb fb fb fb fb ."
-  "fb1 fb1 fb1 fb2 fb2 fb2"
-  "ad ad ad ad ad ."
-  "ad1 ad1 ad1 ad3 ad3 ad3"
-  "ad2 ad2 ad2 ad3 ad3 ad3"
-  "event event event event event ."
-  "event1 event1 event1 event2 event2 event2"
-  "palm palm palm palm palm ."
-  "palm1 palm1 palm2 palm2 palm2 ."
-  "shirts shirts shirts shirts shirts ."
-  "shirt3 shirt3 shirt2 shirt2 shirt1 shirt1"
-  "firefox firefox firefox firefox firefox .";
-
 }
 
 .footer {
